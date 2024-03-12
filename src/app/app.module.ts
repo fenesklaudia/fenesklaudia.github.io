@@ -12,13 +12,17 @@ import { GaleryComponent } from './pages/galery-component/galery-component.compo
 import { PricesComponent } from './pages/prices-component/prices-component.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainPageComponent } from './pages/main-page/main-page.component';
+import { NavbarComponent } from './basic-components/navbar/navbar.component';
+import { FooterComponent } from './basic-components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GaleryComponent,
     PricesComponent,
-    MainPageComponent
+    MainPageComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
