@@ -8,16 +8,16 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { FirstComponent } from './pages/first-component/first-component.component';
-import { SecondComponent } from './pages/second-component/second-component.component';
+import { GaleryComponent } from './pages/galery-component/galery-component.component';
+import { PricesComponent } from './pages/prices-component/prices-component.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent,
-    SecondComponent,
+    GaleryComponent,
+    PricesComponent,
     MainPageComponent
   ],
   imports: [

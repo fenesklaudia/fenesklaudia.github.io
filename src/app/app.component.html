@@ -15,7 +15,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" routerLink="/">Kezdőlap</a>
           </li>
@@ -23,7 +23,7 @@
             <a
               class="nav-link"
               aria-current="page"
-              routerLink="/first-component"
+              routerLink="/galery-component"
               >Galéria</a
             >
           </li>
@@ -38,22 +38,57 @@
               Szolgáltatások
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li class="dropdown-item">Nappali smink</li>
+              <button
+                class="dropdown-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+              >
+                Nappali smink
+              </button>
               <li><hr class="dropdown-divider" /></li>
-              <li class="dropdown-item">Alkalmi smink</li>
+              <button
+                class="dropdown-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+              >
+                Alkalmi smink
+              </button>
               <li><hr class="dropdown-divider" /></li>
-              <li class="dropdown-item">Menyasszonyi smink</li>
+              <button
+                class="dropdown-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+              >
+                Menyasszonyi smink
+              </button>
               <li><hr class="dropdown-divider" /></li>
-              <li class="dropdown-item">Sminktanácsadás</li>
+              <button
+                class="dropdown-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+              >
+                Sminktanácsadás
+              </button>
               <li><hr class="dropdown-divider" /></li>
-              <li class="dropdown-item">Fotózás, forgatás, rendezvény</li>
+              <button
+                class="dropdown-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+              >
+                Fotózás, forgatás, rendezvény
+              </button>
             </ul>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
               aria-current="page"
-              routerLink="/second-component"
+              routerLink="/prices-component"
               >Árlista</a
             >
           </li>
@@ -69,7 +104,7 @@
   </div>
   <div class="mt-auto container">
     <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      class="d-flex flex-wrap justify-content-between align-items-center border-top mt-4"
     >
       <div class="col-md-4 d-flex align-items-center">
         <a
