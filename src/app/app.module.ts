@@ -10,12 +10,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FirstComponent } from './pages/first-component/first-component.component';
 import { SecondComponent } from './pages/second-component/second-component.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { SecondComponent } from './pages/second-component/second-component.compo
     MatSlideToggleModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    NgbModule,
   ],
   providers: [
     provideAnimationsAsync()
