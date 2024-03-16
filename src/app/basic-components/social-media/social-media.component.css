@@ -1,8 +1,15 @@
-button i{
-    margin-left: 1rem;
+button i {
+  margin-left: 1rem;
 }
 img {
+  width: 20rem;
+  height: 30rem;
+  object-fit: cover;
+}
+@media only screen and (max-width: 800px) {
+  img {
     width: 20rem;
-    height: 30rem;
+    height: 15rem;
     object-fit: cover;
+  }
 }
