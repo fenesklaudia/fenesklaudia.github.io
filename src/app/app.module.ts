@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { GaleryComponent } from './pages/galery-component/galery-component.component';
 import { PricesComponent } from './pages/prices-component/prices-component.component';
@@ -14,6 +15,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NavbarComponent } from './basic-components/navbar/navbar.component';
 import { FooterComponent } from './basic-components/footer/footer.component';
+import { ContactMeComponent } from './pages/contact-me/contact-me.component';
+import { SocialMediaComponent } from './basic-components/social-media/social-media.component';
+import { ImageLoadDirective } from './directives/image-load.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,10 @@ import { FooterComponent } from './basic-components/footer/footer.component';
     PricesComponent,
     MainPageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ContactMeComponent,
+    SocialMediaComponent,
+    ImageLoadDirective
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,8 @@ import { FooterComponent } from './basic-components/footer/footer.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    NgbModule,
+    MatTooltipModule,
+    NgbModule
   ],
   providers: [
     provideAnimationsAsync()

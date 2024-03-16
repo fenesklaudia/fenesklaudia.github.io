@@ -1,9 +1,13 @@
 <div class="d-flex flex-column min-vh-100">
-  <app-navbar></app-navbar>
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
-  <div class="mt-auto container">
-    <app-footer></app-footer>
+  <div *ngIf="!loaded" class="spinner-border text-secondary" role="status"></div>
+  <div [ngClass]="{'invisible' : !loaded}">
+    <app-navbar></app-navbar>
+    <div class="container">
+      <br />
+      <router-outlet></router-outlet>
+    </div>
+    <div class="mt-auto container">
+      <app-footer></app-footer>
+    </div>
   </div>
 </div>

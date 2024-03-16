@@ -1,0 +1,8 @@
+.navbar,.navbar-brand{
+    padding: 0;
+    color: blue;
+}
+nav div, nav ul{
+    background-color: #f4f4f4;
+
+}

@@ -1,4 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url("./assets/images/background.jpg");
+  background-repeat: repeat;
+  background-color: #cccccc;
+}
+a {
+  text-decoration: none;
+}
+.btn-on-top button {
+  position: absolute;
+}
+.fa-facebook-f {
+  color: #0866ff;
+}
+.fa-instagram {
+  color: #e6683c;
+}
+.fa-tiktok {
+  color: black;
+}
+.image-blurred-edge {
+  background-image: url("https://picsum.photos/200/300");
+  width: 200px;
+  height: 200px;
+  /* you need to match the shadow color to your background or image border for the desired effect*/
+  box-shadow: 0 0 8px 8px white inset;
+}
+.min-h-80{
+    min-height: 80vh;
+}
