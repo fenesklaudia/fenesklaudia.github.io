@@ -4,12 +4,15 @@ import { GaleryComponent } from './pages/galery-component/galery-component.compo
 import { PricesComponent } from './pages/prices-component/prices-component.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
+import { ServicesComponent } from './pages/services/services.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
   { path: 'galery', component: GaleryComponent },
   { path: 'prices', component: PricesComponent },
   { path: 'contact-me', component: ContactMeComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'services/:subpage', component: ServicesComponent },
 ];
 
 @NgModule({

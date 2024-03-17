@@ -1,0 +1,24 @@
+<div class="text-center">
+<div class="row">
+  <div class="col">
+    <h1>{{ service.title }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <p *ngFor="let item of service.summaries">{{ item }}</p>
+  </div>
+</div>
+<div class="row" *ngFor="let item of service.schedulesInMunites | keyvalue">
+  <div class="col">
+    {{ item.key }}
+  </div>
+  <div class="col">{{ item.value }}</div>
+</div>
+<div class="row" *ngFor="let item of service.pricesInHuf | keyvalue">
+    <div class="col">
+      {{ item.key }}
+    </div>
+    <div class="col">{{ item.value }}</div>
+</div>
+</div>

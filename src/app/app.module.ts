@@ -18,6 +18,8 @@ import { FooterComponent } from './basic-components/footer/footer.component';
 import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { SocialMediaComponent } from './basic-components/social-media/social-media.component';
 import { ImageLoadDirective } from './directives/image-load.directive';
+import { ServicesComponent } from './pages/services/services.component';
+import { OneServiceComponent } from './pages/services/one-service/one-service.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ImageLoadDirective } from './directives/image-load.directive';
     FooterComponent,
     ContactMeComponent,
     SocialMediaComponent,
-    ImageLoadDirective
+    ImageLoadDirective,
+    ServicesComponent,
+    OneServiceComponent
   ],
   imports: [
     BrowserModule,

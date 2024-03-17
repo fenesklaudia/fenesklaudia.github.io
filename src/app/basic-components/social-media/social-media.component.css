@@ -1,6 +1,6 @@
-button i {
+/* button i {
   margin-left: 1rem;
-}
+} */
 img {
   width: 20rem;
   height: 30rem;
@@ -12,4 +12,7 @@ img {
     height: 15rem;
     object-fit: cover;
   }
+}
+p{
+    margin: 0 !important;
 }
