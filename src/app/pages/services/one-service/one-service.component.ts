@@ -1,5 +1,6 @@
 import { Component, Input, input } from '@angular/core';
 import { OneServiceViewModel } from '../../../vew-models/one-service-view-model';
+import { ServiceListService } from '../../../services/service-list.service';
 
 @Component({
   selector: 'app-one-service',
@@ -9,4 +10,6 @@ import { OneServiceViewModel } from '../../../vew-models/one-service-view-model'
 export class OneServiceComponent {
   @Input() service: OneServiceViewModel
 
+  constructor(public servicesList: ServiceListService) {    
+  }
 }

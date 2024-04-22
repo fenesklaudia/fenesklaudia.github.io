@@ -1,7 +1,12 @@
-export class OneServiceViewModel{
-    title: string
-    summaries: string[]
-    schedulesInMunites: {[name: string]: string}
-    pricesInHuf: {[name: string]: number}
-    hints: string[]
+export class OneServiceViewModel {
+    title?: string;
+    summaries?: string[];
+    picName?: string | null;
+    details?: {
+        [name: string]: {
+            price: number,
+            schedule: string,
+            hint?: string
+        }
+    };
 }

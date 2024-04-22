@@ -1,24 +1,38 @@
-<div class="text-center">
-<div class="row">
-  <div class="col">
-    <h1>{{ service.title }}</h1>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-    <p *ngFor="let item of service.summaries">{{ item }}</p>
-  </div>
-</div>
-<div class="row" *ngFor="let item of service.schedulesInMunites | keyvalue">
-  <div class="col">
-    {{ item.key }}
-  </div>
-  <div class="col">{{ item.value }}</div>
-</div>
-<div class="row" *ngFor="let item of service.pricesInHuf | keyvalue">
-    <div class="col">
-      {{ item.key }}
+<div>
+  <div class="row">
+    <div class="col text-center">
+      <h1>{{ service.title }}</h1>
     </div>
-    <div class="col">{{ item.value }}</div>
-</div>
+  </div>
+  <div class="row min-h-60">
+    <div class="col">
+      <p *ngFor="let item of service.summaries">{{ item }}</p>
+    </div>
+  <div class="col-md-5" *ngIf="service.picName">
+    <img class="img-fluid rounded" src="../../../assets/images/services/{{service.picName}}" />
+  </div>
+  </div>
+  <table class="table" *ngIf="this.servicesList.getDetailsLength(this.service)">
+    <thead>
+      <tr>
+        <th scope="col">Szolgáltatás</th>
+        <th scope="col">Időtartam</th>
+        <th scope="col">Ár</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of service.details | keyvalue">
+        <td>
+          {{item.key}}
+        </td>
+        <td>
+          {{item.value.schedule}}
+        </td>
+        <td [matTooltip]="item.value.hint ?? ''">
+          {{item.value.price}} HUF
+          <i class="fa fa-info-circle" *ngIf="item.value.hint"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

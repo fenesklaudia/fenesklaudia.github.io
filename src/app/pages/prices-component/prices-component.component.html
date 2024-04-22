@@ -1,1 +1,35 @@
-<p>prices-component works!</p>
+<div class="row text-center">
+    <h1 class="col fs-1">Árlista</h1>
+</div>
+<div *ngFor="let item of services | keyvalue">
+    <div class="row fs-3">
+        {{item.value.title}}
+    </div>
+    <div class="row" *ngIf="this.servicesList.getDetailsLength(item.value)">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Szolgáltatás</th>
+                    <th scope="col">Időtartam</th>
+                    <th scope="col">Ár</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of item.value.details | keyvalue">
+                    <td>
+                        {{item.key}}
+                    </td>
+                    <td>
+                        {{item.value.schedule}}
+                    </td>
+                    <td>
+                        {{item.value.price}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row" *ngIf="!this.servicesList.getDetailsLength(item.value)">
+        Keress kérlek e-mail-en a megvalósítandó projekt leírásával, így tudok egyedi árajánlatot készíteni.
+    </div>
+</div>
