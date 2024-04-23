@@ -9,7 +9,7 @@ import { OneServiceViewModel } from '../../vew-models/one-service-view-model';
 })
 export class PricesComponent {
 
-  services: { [id: string]: OneServiceViewModel };
+  services: OneServiceViewModel[];
 
   constructor(public servicesList: ServiceListService) {
     this.services = servicesList.services;

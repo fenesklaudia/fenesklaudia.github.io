@@ -6,31 +6,42 @@ html,
 body {
   height: 100%;
 }
+
+* :not(i) {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-image: url("./assets/images/background.jpg");
-  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif !important;
   background-color: #cccccc;
+  color: #000000ab !important;
 }
+
 a {
   text-decoration: none;
 }
+
 .btn-on-top button {
   position: absolute;
 }
+
 .fa-facebook-f {
   color: #0866ff;
 }
+
 .fa-instagram {
   color: #e6683c;
 }
+
 .fa-tiktok {
   color: black;
 }
-.min-h-80{
-    min-height: 80vh;
+
+.min-h-80 {
+  min-height: 80vh;
 }
-.min-h-60{
-    min-height: 60vh;
+
+.min-h-60 {
+  min-height: 60vh;
 }

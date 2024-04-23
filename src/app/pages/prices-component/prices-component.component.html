@@ -1,11 +1,11 @@
 <div class="row text-center">
     <h1 class="col fs-1">Árlista</h1>
 </div>
-<div *ngFor="let item of services | keyvalue">
+<div *ngFor="let item of services">
     <div class="row fs-3">
-        {{item.value.title}}
+        {{item.title}}
     </div>
-    <div class="row" *ngIf="this.servicesList.getDetailsLength(item.value)">
+    <div class="row" *ngIf="this.servicesList.getDetailsLength(item)">
         <table class="table">
             <thead>
                 <tr>
@@ -15,7 +15,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let item of item.value.details | keyvalue">
+                <tr *ngFor="let item of item.details | keyvalue">
                     <td>
                         {{item.key}}
                     </td>
@@ -29,7 +29,7 @@
             </tbody>
         </table>
     </div>
-    <div class="row" *ngIf="!this.servicesList.getDetailsLength(item.value)">
+    <div class="row" *ngIf="!this.servicesList.getDetailsLength(item)">
         Keress kérlek e-mail-en a megvalósítandó projekt leírásával, így tudok egyedi árajánlatot készíteni.
     </div>
 </div>

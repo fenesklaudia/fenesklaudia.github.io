@@ -1,16 +1,15 @@
 <div class="row text-center">
-  <div class="col" *ngFor="let item of services | keyvalue">
-    <button
+  <div class="col" *ngFor="let item of services">
+    <div class="menu-item p-2 border text-nowrap"
       mat-raised-button
-      [routerLink]="['../', item.key]"
-      [color]="subpage === item.key ? 'primary' : ''"
+      [routerLink]="['../', item.link]"
     >
-      {{ item.value.title }}
-    </button>
+      {{ item.title }}
+    </div>
   </div>
 </div>
 <hr />
 <app-one-service
   *ngIf="subpage"
-  [service]="services[subpage]"
+  [service]="getService(subpage)"
 ></app-one-service>

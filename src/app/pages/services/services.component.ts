@@ -11,7 +11,7 @@ import { ServiceListService } from '../../services/service-list.service';
 export class ServicesComponent implements OnInit {
   subpage = '';
 
-  services: { [id: string]: OneServiceViewModel };
+  services: OneServiceViewModel[];
 
   constructor(private route: ActivatedRoute, private servicesList: ServiceListService) {
     this.route.params.subscribe((_) => {
@@ -27,5 +27,9 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('asd');
+  }
+
+  getService(serviceLink: string): OneServiceViewModel {
+    return this.services?.find(x => x.link === serviceLink)!;
   }
 }

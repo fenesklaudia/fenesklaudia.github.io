@@ -8,7 +8,7 @@ import { ServiceListService } from '../../../services/service-list.service';
   styleUrl: './one-service.component.css'
 })
 export class OneServiceComponent {
-  @Input() service: OneServiceViewModel
+  @Input() service: OneServiceViewModel;
 
   constructor(public servicesList: ServiceListService) {    
   }
