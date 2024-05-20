@@ -6,25 +6,7 @@
         {{item.title}}
     </div>
     <div class="row" *ngIf="this.servicesList.getDetailsLength(item)">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Szolgáltatás</th>
-                    <th scope="col" class="text-end">Ár</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let item of item.details | keyvalue">
-                    <td>
-                        {{item.key}}
-                        <p class="mb-0" *ngIf="item.value.hint" style="font-size: smaller; opacity: 50%;">*{{item.value.hint}}</p>
-                    </td>
-                    <td class="text-end align-middle">
-                        {{item.value.price | number}} Ft
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <app-price-details [service]="item" [cols]="shownCols"></app-price-details>
     </div>
     <div class="row" *ngIf="!this.servicesList.getDetailsLength(item)">
         Keress kérlek e-mail-en a megvalósítandó projekt leírásával, így tudok egyedi árajánlatot készíteni.

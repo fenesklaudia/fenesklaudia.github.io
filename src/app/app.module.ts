@@ -20,6 +20,7 @@ import { SocialMediaComponent } from './basic-components/social-media/social-med
 import { ImageLoadDirective } from './directives/image-load.directive';
 import { ServicesComponent } from './pages/services/services.component';
 import { OneServiceComponent } from './pages/services/one-service/one-service.component';
+import { PriceDetailsComponent } from './basic-components/price-details/price-details/price-details.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { OneServiceComponent } from './pages/services/one-service/one-service.co
     SocialMediaComponent,
     ImageLoadDirective,
     ServicesComponent,
-    OneServiceComponent
+    OneServiceComponent,
+    PriceDetailsComponent
   ],
   imports: [
     BrowserModule,

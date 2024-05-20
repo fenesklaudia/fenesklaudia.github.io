@@ -11,29 +11,7 @@
     <div class="col-xl-6 fs-6">
       <h1 class="fs-1 mb-5 mt-2">{{ service.title }}</h1>
       <p *ngFor="let item of service.summaries">{{ item }}</p>
-      <table class="table" *ngIf="this.servicesList.getDetailsLength(this.service)">
-        <thead>
-          <tr>
-            <th scope="col">Szolgáltatás</th>
-            <th scope="col" class="text-end">Időtartam</th>
-            <th scope="col" class="text-end">Ár</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of service.details | keyvalue">
-            <td class="align-middle">
-              {{item.key}}
-              <p class="mb-0" *ngIf="item.value.hint" style="font-size: smaller; opacity: 50%;">*{{item.value.hint}}</p>
-            </td>
-            <td class="text-end align-middle">
-              {{item.value.schedule}}
-            </td>
-            <td class="text-end align-middle">
-              {{item.value.price | number}} Ft
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <app-price-details [service]="service" [cols]="shownCols"></app-price-details>
     </div>
     <div class="col-xl-1"></div>
   </div>
