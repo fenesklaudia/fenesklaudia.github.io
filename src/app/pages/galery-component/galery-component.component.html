@@ -1,1 +1,6 @@
-<p>galery-component works!</p>
+<div class="row justify-content-center">
+
+    <div class="col-sm-3 text-center btn-on-top p-2" *ngFor="let image of imageIndexes; index as i">
+            <img class="img-fluid rounded" src="{{image.thumbnailUrl}}" (click)="openImage(i)" />
+    </div>
+</div>
