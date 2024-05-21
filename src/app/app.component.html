@@ -1,8 +1,8 @@
 <div class="d-flex flex-column min-vh-100">
   <div *ngIf="!loaded" class="spinner-border text-secondary" role="status"></div>
-  <div [ngClass]="{'invisible' : !loaded}">
+  <div>
     <app-navbar></app-navbar>
-    <div class="container">
+    <div class="container" [ngClass]="{'invisible' : !loaded}">
       <br />
       <router-outlet></router-outlet>
     </div>

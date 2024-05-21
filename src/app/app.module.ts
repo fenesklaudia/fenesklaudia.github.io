@@ -21,6 +21,8 @@ import { ImageLoadDirective } from './directives/image-load.directive';
 import { ServicesComponent } from './pages/services/services.component';
 import { OneServiceComponent } from './pages/services/one-service/one-service.component';
 import { PriceDetailsComponent } from './basic-components/price-details/price-details/price-details.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { PriceDetailsComponent } from './basic-components/price-details/price-de
     ImageLoadDirective,
     ServicesComponent,
     OneServiceComponent,
-    PriceDetailsComponent
+    PriceDetailsComponent,
+    PageNotFoundComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
