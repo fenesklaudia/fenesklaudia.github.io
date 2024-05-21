@@ -11,6 +11,6 @@
 </div>
 <hr />
 <app-one-service
-  *ngIf="subpage"
+  *ngIf="subpage && getService(subpage)"
   [service]="getService(subpage)"
 ></app-one-service>
