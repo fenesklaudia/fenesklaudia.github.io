@@ -45,6 +45,11 @@ a {
 .min-h-60 {
   min-height: 60vh;
 }
+
 .fit-content{
   width: fit-content !important;
+}
+
+.imageViewer .container{
+  position: static !important;
 }
