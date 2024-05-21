@@ -1,14 +1,23 @@
-<div class="row text-center mt-5">
+<div class="text-center mt-5">
     <h1 class="col fs-1">Árlista</h1>
 </div>
 <div *ngFor="let item of services">
-    <div class="row fs-3 mt-5 mb-2">
+    <div class="fs-3 mt-5 mb-2">
         {{item.title}}
     </div>
-    <div class="row" *ngIf="this.servicesList.getDetailsLength(item)">
+    <div *ngIf="this.servicesList.getDetailsLength(item)">
         <app-price-details [service]="item" [cols]="shownCols"></app-price-details>
     </div>
-    <div class="row" *ngIf="!this.servicesList.getDetailsLength(item)">
+    <div *ngIf="!this.servicesList.getDetailsLength(item)">
         Keress kérlek e-mail-en a megvalósítandó projekt leírásával, így tudok egyedi árajánlatot készíteni.
+    </div>
+</div>
+<div>
+    <div class="fs-3 mt-5 mb-2">
+        <p>Kiszállási díj Budapesten kívül </p>
+    </div>
+    <div>
+        <p>150 Ft/km oda vissza útra értendő </p>
+        <p>A Budapesten kívüli kiszállást min. 3 smink elkészítése esetén tudom vállalni </p>
     </div>
 </div>

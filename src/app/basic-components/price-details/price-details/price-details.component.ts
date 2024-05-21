@@ -1,12 +1,13 @@
-import { AfterViewInit, Component, Input, OnInit, input } from '@angular/core';
+import { AfterViewInit, Component, Input, OnChanges, OnInit, SimpleChanges, input } from '@angular/core';
 import { OneServiceViewModel } from '../../../vew-models/one-service-view-model';
+import { ServiceListService } from '../../../services/service-list.service';
 
 @Component({
   selector: 'app-price-details',
   templateUrl: './price-details.component.html',
   styleUrl: './price-details.component.css'
 })
-export class PriceDetailsComponent implements OnInit {
+export class PriceDetailsComponent implements OnChanges {
   @Input() service: OneServiceViewModel;
   @Input() cols: PriceCols[];
 
@@ -15,11 +16,10 @@ export class PriceDetailsComponent implements OnInit {
 
   filterType = PriceCols;
 
-  show(filter: PriceCols): boolean {
-    return this.cols.findIndex(x => x === filter) >= 0;
-  }
-
-  ngOnInit(): void {
+  constructor(public servicesList: ServiceListService) { }
+  ngOnChanges(changes: SimpleChanges): void {
+    this.hintMap = {};
+    this.hints = [];
     for (let key in this.service.details) {
       if (!this.service.details || !this.service.details[key].hint) {
         continue;
@@ -35,11 +35,15 @@ export class PriceDetailsComponent implements OnInit {
     }
   }
 
-  getHintCount(key: string): number{
+  show(filter: PriceCols): boolean {
+    return this.cols.findIndex(x => x === filter) >= 0;
+  }
+
+  getHintCount(key: string): number {
     return this.hintMap[key]?.hintIndex;
   }
 
-  writeStarNumber(count: number): string{
+  writeStarNumber(count: number): string {
     let stars = '';
     for (let i = 0; i < count + 1; i++) {
       stars += '*';

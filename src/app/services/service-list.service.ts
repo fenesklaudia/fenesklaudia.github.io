@@ -14,6 +14,7 @@ export class ServiceListService {
         'Természetes, mégis ragyogó - ez a nappali smink titka. A megfelelő technikákkal és termékekkel könnyedén elérhetjük, hogy egész nap friss megjelenésed legyen. A nappali smink nem csupán a bőrhibák elfedéséről szól, hanem az arcod természetes szépségének kiemeléséről is.',
         'Az alap lépések között szerepel az alapozó, amely egyenletes bőrt biztosít, a korrektor, amely eltünteti a bőrhibákat, valamint a púder, amely mattítja az olajos fényt. A szemeknél a cél a természetes földszínek használatával a szemed karakterének kiemelése, míg az ajkakon egy lágy színű rúzs vagy szájfény teszi tökéletessé a megjelenést.',
       ],
+      shortSummary: 'Természetes hatású smink egy üzleti, mindennapi megjelenéshez',
       details: {
         'Nappali smink': {
           price: 10_000,
@@ -30,6 +31,7 @@ export class ServiceListService {
         'Az alkalmi smink lehetőséget ad arra, hogy kreatívkodj és kifejezd a stílusodat, miközben mégis megőrzöd a természetességet és az eleganciát.',
         'A cél az, hogy jól érezd magad a bőrödben és passzoljon az egyéniségedhez a smink.'
       ],
+      shortSummary: 'Különleges alkalmakra, fotózásokra',
       details: {
         'Alkalmi smink': {
           price: 13_000,

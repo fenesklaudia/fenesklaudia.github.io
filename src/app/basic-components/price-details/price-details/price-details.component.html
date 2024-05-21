@@ -1,4 +1,4 @@
-<table class="table" *ngIf="service?.details">
+<table class="table" *ngIf="!!service && servicesList.getDetailsLength(service)">
     <thead>
         <tr>
             <th scope="col">Szolgáltatás</th>

@@ -3,6 +3,7 @@ export class OneServiceViewModel {
     summaries?: string[];
     picName?: string | null;
     link?: string;
+    shortSummary?: string
     details?: {
         [name: string]: {
             price: number,
