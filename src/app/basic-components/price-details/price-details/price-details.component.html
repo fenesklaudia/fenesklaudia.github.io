@@ -1,3 +1,6 @@
+<div *ngIf="service.shortSummary && show(filterType.shortSummary)">
+    {{service.shortSummary}}
+</div>
 <table class="table" *ngIf="!!service && servicesList.getDetailsLength(service)">
     <thead>
         <tr>

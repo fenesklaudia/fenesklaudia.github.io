@@ -54,5 +54,6 @@ export class PriceDetailsComponent implements OnChanges {
 
 export enum PriceCols {
   price,
-  schedule
+  schedule,
+  shortSummary
 }

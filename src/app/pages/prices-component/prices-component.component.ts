@@ -11,7 +11,7 @@ import { PriceCols } from '../../basic-components/price-details/price-details/pr
 export class PricesComponent {
 
   services: OneServiceViewModel[];
-  shownCols: PriceCols[] = [PriceCols.price];
+  shownCols: PriceCols[] = [PriceCols.price, PriceCols.shortSummary];
 
   constructor(public servicesList: ServiceListService) {
     this.services = servicesList.services;
