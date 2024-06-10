@@ -1,3 +1,7 @@
 i{
     margin: 1rem;
 }
+
+iframe{
+    max-width: 100%;
+}
