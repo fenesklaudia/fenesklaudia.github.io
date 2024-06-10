@@ -23,6 +23,7 @@ import { OneServiceComponent } from './pages/services/one-service/one-service.co
 import { PriceDetailsComponent } from './basic-components/price-details/price-details/price-details.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { RibbonComponent } from './basic-components/ribbon/ribbon.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { AdminComponent } from './pages/admin/admin.component';
     OneServiceComponent,
     PriceDetailsComponent,
     PageNotFoundComponent,
-    AdminComponent
+    AdminComponent,
+    RibbonComponent
   ],
   imports: [
     BrowserModule,
