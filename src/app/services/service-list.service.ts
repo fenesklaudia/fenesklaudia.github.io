@@ -8,22 +8,6 @@ export class ServiceListService {
 
   public services: OneServiceViewModel[] = [
     {
-      title: 'Nappali smink',
-      summaries: [
-        'A tökéletes választás egy hétköznapi, üzleti megjelenéshez, vagy csak egy találkához a barátnőiddel.',
-        'Természetes, mégis ragyogó - ez a nappali smink titka. A megfelelő technikákkal és termékekkel könnyedén elérhetjük, hogy egész nap friss megjelenésed legyen. A nappali smink nem csupán a bőrhibák elfedéséről szól, hanem az arcod természetes szépségének kiemeléséről is.',
-        'Az alap lépések között szerepel az alapozó, amely egyenletes bőrt biztosít, a korrektor, amely eltünteti a bőrhibákat, valamint a púder, amely mattítja az olajos fényt. A szemeknél a cél a természetes földszínek használatával a szemed karakterének kiemelése, míg az ajkakon egy lágy színű rúzs vagy szájfény teszi tökéletessé a megjelenést.',
-      ],
-      shortSummary: 'Természetes hatású smink egy üzleti, mindennapi megjelenéshez',
-      details: {
-        'Nappali smink': {
-          price: 10_000,
-          schedule: '35-45 perc'
-        },
-      },
-      picName: "daytime.jpg",
-      link: "daytime",
-    }, {
       title: 'Alkalmi smink',
       summaries: [
         'Egy szépen elkészített alkalmi smink fokozza az önbizalmadat, miközben meghatározza az eseményhez való megfelelő stílust, legyen az szalagavató, ballagás, kismama fotózás, karácsonyi buli, szilveszter vagy bármilyen különleges alkalom.',

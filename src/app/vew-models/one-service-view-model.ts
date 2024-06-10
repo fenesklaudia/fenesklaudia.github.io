@@ -1,4 +1,4 @@
-export class OneServiceViewModel {
+export interface OneServiceViewModel {
     title?: string;
     summaries?: string[];
     picName?: string | null;
