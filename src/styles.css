@@ -46,10 +46,14 @@ a {
   min-height: 60vh;
 }
 
-.fit-content{
+.fit-content {
   width: fit-content !important;
 }
 
-.imageViewer .container{
+.imageViewer .container {
   position: static !important;
+}
+
+.mv-50vw {
+  max-width: 50vw !important;
 }
