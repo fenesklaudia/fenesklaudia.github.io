@@ -14,10 +14,10 @@
             <td>
                 {{item.key}}{{writeStarNumber(getHintCount(item.key))}}
             </td>
-            <td class="text-end align-middle" *ngIf="show(filterType.schedule)">
+            <td class="text-end align-middle text-nowrap" *ngIf="show(filterType.schedule)">
                 {{item.value.schedule}}
-              </td>
-            <td class="text-end align-middle" *ngIf="show(filterType.price)">
+            </td>
+            <td class="text-end align-middle text-nowrap" *ngIf="show(filterType.price)">
                 {{item.value.price | number}} Ft
             </td>
         </tr>
