@@ -39,7 +39,7 @@ a {
 }
 
 .min-h-80 {
-  min-height: 80vh;
+  margin-bottom: 10vh;
 }
 
 .min-h-60 {
@@ -56,4 +56,27 @@ a {
 
 .mv-50vw {
   max-width: 50vw !important;
+}
+
+.mh-50vh {
+  max-height: 50vh;
+  width: 100%;
+}
+
+.img-fluid {
+  object-fit: cover;
+}
+
+img {
+  height: 100% !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  .img-fluid {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 50vh;
+    width: 100%;
+  }
 }
