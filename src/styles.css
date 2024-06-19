@@ -67,8 +67,8 @@ a {
   object-fit: cover;
 }
 
-img {
-  height: 100% !important;
+img.img-fluid {
+  height: 100%;
 }
 
 @media only screen and (max-width: 1199px) {
