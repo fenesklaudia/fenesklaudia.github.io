@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import ImageViewer from 'awesome-image-viewer';
+import { ImageListService } from '../../services/image-list.service';
 
 @Component({
   selector: 'app-galery-component',
@@ -10,24 +11,12 @@ export class GaleryComponent {
 
   imageIndexes: any[];
 
-  data = [{
-    mainUrl: 'cdn.com/img1.jpg',
-    thumbnailUrl: 'cdn.com/img1.min.jpg',
-    description: 'Steel Wool',
-  },
-  {
-    mainUrl: 'cdn.com/img2.jpg',
-    thumbnailUrl: 'cdn.com/img2.min.jpg',
-    description: 'Beach',
-  }];
-
-  constructor() {
-    this.imageIndexes = Array(32).fill(35).map((x, i) => ({
-      mainUrl: `../../../assets/images/galery/full/${i + 1}.jpg`,
-      thumbnailUrl: `../../../assets/images/galery/${i + 1}.jpg`,
+  constructor(imageList: ImageListService) {
+    this.imageIndexes = imageList.getImages.map(x => ({
+      mainUrl: `../../../assets/images/galery/full/${x.pictureName}`,
+      thumbnailUrl: `../../../assets/images/galery/${x.pictureName}`,
       description: ''
-    })
-    );
+    }));
   }
 
   openImage(image: number): void {
