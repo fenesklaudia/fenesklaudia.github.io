@@ -4,13 +4,13 @@
     </div>
   </div>
   <div class="row min-h-60 mt-5">
-    <div class="col-xl-4 offset-xl-1 text-center" *ngIf="service.picName">
-      <img class="img-fluid rounded" src="../../../assets/images/services/{{service.picName}}" />
+    <div *ngIf="service.picName" class="col-xl-4 offset-xl-1 text-center">
+      <img class="img-fluid rounded" src="../../../assets/images/services/{{service.picName}}"/>
     </div>
     <div class="col-xl-6 fs-6">
-      <h1 class="fs-1 mb-5 mt-2">{{ service.title }}</h1>
-      <p *ngFor="let item of service.summaries">{{ item }}</p>
-      <app-price-details [service]="service" [cols]="shownCols"></app-price-details>
+      <h1 class="fs-1 mb-5 mt-2">{{service.title}}</h1>
+      <p *ngFor="let item of service.summaries">{{item}}</p>
+      <app-price-details [cols]="shownCols" [service]="service"></app-price-details>
     </div>
   </div>
 </div>

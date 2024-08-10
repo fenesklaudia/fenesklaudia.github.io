@@ -1,3 +1,3 @@
 export interface PictureViewModel {
-    pictureName: string;
+  pictureName: string;
 }

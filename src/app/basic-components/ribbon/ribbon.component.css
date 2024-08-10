@@ -1,27 +1,27 @@
 .img-container {
-    position: relative;
-    text-align: center;
-    font-size: 8rem;
+  position: relative;
+  text-align: center;
+  font-size: 8rem;
 }
 
 @media only screen and (max-width: 800px) {
-    .img-container {
-        font-size: 5rem;
-    }
+  .img-container {
+    font-size: 5rem;
+  }
 }
 
 .ribbon {
-    width: 100% !important;
-    height: 20vh !important;
-    object-fit: cover;
+  width: 100% !important;
+  height: 20vh !important;
+  object-fit: cover;
 }
 
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 65%;
-    color: white;
-    text-shadow: 0 0 1rem black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 65%;
+  color: white;
+  text-shadow: 0 0 1rem black;
 }

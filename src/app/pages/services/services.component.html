@@ -1,15 +1,15 @@
 <div class="row text-center">
-  <div class="col" *ngFor="let item of services">
-    <div class="menu-item p-2 border text-nowrap"
-      mat-raised-button
-      [routerLink]="['../', item.link]"
-      routerLinkActive="is-active"
+  <div *ngFor="let item of services" class="col">
+    <div [routerLink]="['../', item.link]"
+         class="menu-item p-2 border text-nowrap"
+         mat-raised-button
+         routerLinkActive="is-active"
     >
-      {{ item.title }}
+      {{item.title}}
     </div>
   </div>
 </div>
-<hr />
+<hr/>
 <app-one-service
   *ngIf="subpage && getService(subpage)"
   [service]="getService(subpage)"

@@ -7,17 +7,16 @@ import { Subject } from 'rxjs';
 export class ImageService {
 
   private _imagesLoading = new Subject<number>();
+  imagesLoading$ = this._imagesLoading.asObservable();
   private images: Map<HTMLElement, boolean> = new Map();
   private imagesLoading = 0;
-
-  imagesLoading$ = this._imagesLoading.asObservable();
 
   imageLoading(img: HTMLElement) {
     if (!this.images.has(img) || this.images.get(img)) {
       this.images.set(img, false);
       this.imagesLoading++;
       this._imagesLoading.next(this.imagesLoading);
-      
+
     }
   }
 

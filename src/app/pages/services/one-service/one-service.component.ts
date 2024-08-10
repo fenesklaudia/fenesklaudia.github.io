@@ -1,4 +1,4 @@
-import { Component, Input, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { OneServiceViewModel } from '../../../vew-models/one-service-view-model';
 import { ServiceListService } from '../../../services/service-list.service';
 import { PriceCols } from '../../../basic-components/price-details/price-details/price-details.component';
@@ -10,9 +10,9 @@ import { PriceCols } from '../../../basic-components/price-details/price-details
 })
 export class OneServiceComponent {
   @Input() service: OneServiceViewModel;
-  
+
   shownCols: PriceCols[] = [PriceCols.price, PriceCols.schedule];
 
-  constructor(public servicesList: ServiceListService) {    
+  constructor(public servicesList: ServiceListService) {
   }
 }

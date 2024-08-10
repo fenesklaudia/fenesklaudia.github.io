@@ -11,7 +11,7 @@ describe('SocialMediaComponent', () => {
       declarations: [SocialMediaComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(SocialMediaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

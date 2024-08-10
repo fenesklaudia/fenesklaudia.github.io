@@ -1,8 +1,8 @@
 <div class="text-center mt-5 mb-5">
-    <h1 class="col fs-1">Portfólió</h1>
+  <h1 class="col fs-1">Portfólió</h1>
 </div>
 <div class="row justify-content-center">
-    <div class="col-sm-3 text-center btn-on-top p-2" *ngFor="let image of imageIndexes; index as i">
-            <img class="img-fluid rounded" src="{{image.thumbnailUrl}}" (click)="openImage(i)" />   
-    </div>
+  <div *ngFor="let image of imageIndexes; index as i" class="col-sm-3 text-center btn-on-top p-2">
+    <img (click)="openImage(i)" class="img-fluid rounded" src="{{image.thumbnailUrl}}"/>
+  </div>
 </div>

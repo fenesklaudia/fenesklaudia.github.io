@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Input, OnChanges, OnInit, SimpleChanges, input } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { OneServiceViewModel } from '../../../vew-models/one-service-view-model';
 import { ServiceListService } from '../../../services/service-list.service';
 
@@ -16,7 +16,9 @@ export class PriceDetailsComponent implements OnChanges {
 
   filterType = PriceCols;
 
-  constructor(public servicesList: ServiceListService) { }
+  constructor(public servicesList: ServiceListService) {
+  }
+
   ngOnChanges(changes: SimpleChanges): void {
     this.hintMap = {};
     this.hints = [];
@@ -27,10 +29,10 @@ export class PriceDetailsComponent implements OnChanges {
 
       const hintIndex = this.hints.findIndex(x => x === this.service.details![key].hint)
       if (hintIndex >= 0) {
-        this.hintMap[key] = { hintIndex: hintIndex };
+        this.hintMap[key] = {hintIndex: hintIndex};
       } else {
         this.hints.push(this.service.details[key].hint!);
-        this.hintMap[key] = { hintIndex: this.hints.length - 1 };
+        this.hintMap[key] = {hintIndex: this.hints.length - 1};
       }
     }
   }

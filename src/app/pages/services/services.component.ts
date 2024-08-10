@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { OneServiceViewModel } from '../../vew-models/one-service-view-model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ServiceListService } from '../../services/service-list.service';
@@ -8,8 +8,8 @@ import { ServiceListService } from '../../services/service-list.service';
   templateUrl: './services.component.html',
   styleUrl: './services.component.css',
 })
-export class ServicesComponent implements OnInit{
-  subpage :string = '';
+export class ServicesComponent implements OnInit {
+  subpage: string = '';
 
   services: OneServiceViewModel[] = [];
 
@@ -23,7 +23,7 @@ export class ServicesComponent implements OnInit{
 
   ngOnInit(): void {
     console.log("here");
-    
+
     if (!this.getService(this.subpage)) {
       const link = this.services[0].link
       this.router.navigate(['services', link])

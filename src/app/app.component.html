@@ -2,8 +2,8 @@
   <div *ngIf="!loaded" class="spinner-border text-secondary" role="status"></div>
   <div>
     <app-navbar></app-navbar>
-    <div class="container" [ngClass]="{'invisible' : !loaded}">
-      <br />
+    <div [ngClass]="{'invisible' : !loaded}" class="container">
+      <br/>
       <router-outlet></router-outlet>
     </div>
   </div>

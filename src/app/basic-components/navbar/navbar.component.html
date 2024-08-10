@@ -1,54 +1,59 @@
 <nav class="navbar navbar-expand-sm">
   <div class="container container-fluid">
-    <a class="navbar-brand" routerLink="/" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-      <img src="../../../assets/images/logo.png" class="img-fluid" />
+    <a class="navbar-brand" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse" routerLink="/">
+      <img class="img-fluid" src="../../../assets/images/logo.png"/>
     </a>
-    <button mat-button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" mat-button
+            type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link" aria-current="page"
-            routerLink="/">Főoldal</a>
+          <a aria-current="page" class="nav-link" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"
+             routerLink="/">Főoldal</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown"
+             role="button">
             Szolgáltatások
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <div class="m-3 collapsable-menu-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-              [routerLink]="['services', 'casual']">
+          <ul aria-labelledby="navbarDropdown" class="dropdown-menu">
+            <div [routerLink]="['services', 'casual']" class="m-3 collapsable-menu-item"
+                 data-bs-target=".navbar-collapse.show"
+                 data-bs-toggle="collapse">
               Alkalmi smink
             </div>
-            <div class="m-3 collapsable-menu-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-              [routerLink]="['services', 'bridal']">
+            <div [routerLink]="['services', 'bridal']" class="m-3 collapsable-menu-item"
+                 data-bs-target=".navbar-collapse.show"
+                 data-bs-toggle="collapse">
               Menyasszonyi smink
             </div>
-            <div class="m-3 collapsable-menu-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-              [routerLink]="['services', 'advice']">
+            <div [routerLink]="['services', 'advice']" class="m-3 collapsable-menu-item"
+                 data-bs-target=".navbar-collapse.show"
+                 data-bs-toggle="collapse">
               Sminktanácsadás
             </div>
-            <div class="m-3 collapsable-menu-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-              [routerLink]="['services', 'other-events']">
+            <div [routerLink]="['services', 'other-events']" class="m-3 collapsable-menu-item"
+                 data-bs-target=".navbar-collapse.show"
+                 data-bs-toggle="collapse">
               Fotózás, forgatás, rendezvény
             </div>
           </ul>
         </li>
         <li class="nav-item">
-          <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link" aria-current="page"
-            routerLink="/prices">Árlista</a>
+          <a aria-current="page" class="nav-link" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"
+             routerLink="/prices">Árlista</a>
         </li>
         <li class="nav-item">
-          <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link" aria-current="page"
-            routerLink="/galery">Portfólió</a>
+          <a aria-current="page" class="nav-link" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"
+             routerLink="/galery">Portfólió</a>
         </li>
         <li class="nav-item">
-          <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link" aria-current="page"
-            routerLink="/contact-me">Kapcsolat</a>
+          <a aria-current="page" class="nav-link" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"
+             routerLink="/contact-me">Kapcsolat</a>
         </li>
       </ul>
     </div>

@@ -1,25 +1,25 @@
 <div class="text-center mt-5">
-    <h1 class="col fs-1">Árlista</h1>
+  <h1 class="col fs-1">Árlista</h1>
 </div>
 <div *ngFor="let item of services">
-    <div class="fs-3 mt-5 mb-2">
-        {{item.title}}
-    </div>
-    <div *ngIf="this.servicesList.getDetailsLength(item)">
-        <app-price-details [service]="item" [cols]="shownCols"></app-price-details>
-    </div>
-    <div *ngIf="!this.servicesList.getDetailsLength(item)">
-        Keress kérlek e-mail-en a megvalósítandó projekt leírásával, így tudok egyedi árajánlatot készíteni.
-    </div>
+  <div class="fs-3 mt-5 mb-2">
+    {{item.title}}
+  </div>
+  <div *ngIf="this.servicesList.getDetailsLength(item)">
+    <app-price-details [cols]="shownCols" [service]="item"></app-price-details>
+  </div>
+  <div *ngIf="!this.servicesList.getDetailsLength(item)">
+    Keress kérlek e-mail-en a megvalósítandó projekt leírásával, így tudok egyedi árajánlatot készíteni.
+  </div>
 </div>
 <div>
-    <div class="fs-3 mt-5 mb-2">
-        <p>Kiszállási díj</p>
-    </div>
-    <div>
-        <p>A kiszállási díj 150 Ft/km a <a href="/contact-me">Pillangó parktól</a>, oda vissza útra értendő, plusz
-            parkolási díj.
-        </p>
-        <p>Budapesten kívüli kiszállást min. 3 smink elkészítése esetén tudom vállalni</p>
-    </div>
+  <div class="fs-3 mt-5 mb-2">
+    <p>Kiszállási díj</p>
+  </div>
+  <div>
+    <p>A kiszállási díj 150 Ft/km a <a href="/contact-me">Pillangó parktól</a>, oda vissza útra értendő, plusz
+      parkolási díj.
+    </p>
+    <p>Budapesten kívüli kiszállást min. 3 smink elkészítése esetén tudom vállalni</p>
+  </div>
 </div>

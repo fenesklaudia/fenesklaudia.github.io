@@ -11,7 +11,7 @@ describe('FirstComponentComponent', () => {
       declarations: [GaleryComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(GaleryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

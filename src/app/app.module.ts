@@ -58,4 +58,5 @@ import { RibbonComponent } from './basic-components/ribbon/ribbon.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

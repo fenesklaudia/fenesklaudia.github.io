@@ -7,19 +7,19 @@ import { ImageService } from '../services/image.service';
 export class ImageLoadDirective {
 
   constructor(private el: ElementRef,
-    private imageService: ImageService) {
+              private imageService: ImageService) {
 
     imageService.imageLoading(el.nativeElement);
-    }
+  }
 
-    @HostListener('load')
-    onLoad() {
+  @HostListener('load')
+  onLoad() {
     this.imageService.imageLoadedOrError(this.el.nativeElement);
-    }
+  }
 
-    @HostListener('error')
-    onError() {
+  @HostListener('error')
+  onError() {
     this.imageService.imageLoadedOrError(this.el.nativeElement);
-    }
+  }
 
 }

@@ -1,27 +1,27 @@
 .navbar,
 .navbar-brand {
-    padding: 0;
-    color: blue;
+  padding: 0;
+  color: blue;
 }
 
 nav,
 nav div,
 nav ul {
-    background-color: #f4f4f4;
-    font-size: large;
+  background-color: #f4f4f4;
+  font-size: large;
 }
 
 nav a.navbar-brand {
-    width: 5rem;
-    height: 5rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .collapsable-menu-item {
-    cursor: pointer;
-    white-space: nowrap;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .dropdown-menu {
-    border-color: #00000000;
-    padding: .5rem;
+  border-color: #00000000;
+  padding: .5rem;
 }
