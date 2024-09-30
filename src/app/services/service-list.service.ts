@@ -18,9 +18,9 @@ export class ServiceListService {
       shortSummary: 'Különleges alkalmakra, fotózásokra',
       details: {
         'Alkalmi smink': {
-          price: 13_000,
+          price: 16_000,
           schedule: '90 perc',
-          hint: 'Tincses vagy soros műszempilla ragasztása +1,500 Ft'
+          hint: 'Tincses vagy soros műszempilla ragasztása +2,000 Ft'
         },
       },
       picName: "casual.jpg",
@@ -35,23 +35,23 @@ export class ServiceListService {
       ],
       details: {
         'Menyasszonyi próbasmink': {
-          price: 16_500,
+          price: 20_000,
           schedule: '90-120 perc',
-          hint: 'Tincses vagy soros műszempilla ragasztása +1,500 Ft'
+          hint: 'Tincses vagy soros műszempilla ragasztása +2,000 Ft'
         },
         'Menyasszonyi smink a nagy napon': {
-          price: 16_500,
+          price: 20_000,
           schedule: '90 perc',
-          hint: 'Tincses vagy soros műszempilla ragasztása +1,500 Ft'
+          hint: 'Tincses vagy soros műszempilla ragasztása +2,000 Ft'
         },
         'Vőlegény smink': {
           price: 3_500,
           schedule: '30 perc',
         },
         'Minden további vendég sminkje': {
-          price: 13_000,
+          price: 16_000,
           schedule: '30-60 perc',
-          hint: 'Tincses vagy soros műszempilla ragasztása +1,500 Ft'
+          hint: 'Tincses vagy soros műszempilla ragasztása +2,000 Ft'
         },
       },
       picName: 'bridal.jpg',
