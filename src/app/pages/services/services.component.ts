@@ -22,8 +22,6 @@ export class ServicesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("here");
-
     if (!this.getService(this.subpage)) {
       const link = this.services[0].link
       this.router.navigate(['services', link])
