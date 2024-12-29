@@ -81,3 +81,9 @@ img.img-fluid {
     width: 100%;
   }
 }
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  /* Ensures spacing between words is consistent */
+}
