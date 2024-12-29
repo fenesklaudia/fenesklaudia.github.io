@@ -1,59 +1,54 @@
-<nav class="navbar navbar-expand-sm">
+<nav class="navbar navbar-expand-md">
   <div class="container container-fluid">
     <a class="navbar-brand" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse" routerLink="/">
-      <img class="img-fluid" src="../../../assets/images/logo.png"/>
+      <img class="img-fluid" src="../../../assets/images/logo.png" />
     </a>
     <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-            class="navbar-toggler"
-            data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" mat-button
-            type="button">
+      class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" mat-button
+      type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a aria-current="page" class="nav-link" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"
-             routerLink="/">Főoldal</a>
+            routerLink="/">Főoldal</a>
         </li>
         <li class="nav-item dropdown">
           <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown"
-             role="button">
+            role="button">
             Szolgáltatások
           </a>
           <ul aria-labelledby="navbarDropdown" class="dropdown-menu">
             <div [routerLink]="['services', 'casual']" class="m-3 collapsable-menu-item"
-                 data-bs-target=".navbar-collapse.show"
-                 data-bs-toggle="collapse">
+              data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse">
               Alkalmi smink
             </div>
             <div [routerLink]="['services', 'bridal']" class="m-3 collapsable-menu-item"
-                 data-bs-target=".navbar-collapse.show"
-                 data-bs-toggle="collapse">
+              data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse">
               Menyasszonyi smink
             </div>
             <div [routerLink]="['services', 'advice']" class="m-3 collapsable-menu-item"
-                 data-bs-target=".navbar-collapse.show"
-                 data-bs-toggle="collapse">
+              data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse">
               Sminktanácsadás
             </div>
             <div [routerLink]="['services', 'other-events']" class="m-3 collapsable-menu-item"
-                 data-bs-target=".navbar-collapse.show"
-                 data-bs-toggle="collapse">
+              data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse">
               Fotózás, forgatás, rendezvény
             </div>
           </ul>
         </li>
         <li class="nav-item">
           <a aria-current="page" class="nav-link" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"
-             routerLink="/prices">Árlista</a>
+            routerLink="/prices">Árlista</a>
         </li>
         <li class="nav-item">
           <a aria-current="page" class="nav-link" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"
-             routerLink="/galery">Portfólió</a>
+            routerLink="/galery">Portfólió</a>
         </li>
         <li class="nav-item">
           <a aria-current="page" class="nav-link" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"
-             routerLink="/contact-me">Kapcsolat</a>
+            routerLink="/contact-me">Kapcsolat</a>
         </li>
       </ul>
     </div>
