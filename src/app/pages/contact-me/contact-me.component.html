@@ -1,29 +1,36 @@
-<app-ribbon imagePath="../../../assets/images/contact-me-ribbon.jpeg"></app-ribbon>
+<app-ribbon imagePath="../../../assets/images/contact-me-ribbon.jpeg" *ngIf="!simplified"></app-ribbon>
 <div class="text-center mt-5 mb-5">
-  <h1 class="col fs-1">Kapcsolat</h1>
+  <div class="row">
+    <div class="col text-center">
+      <hr />
+    </div>
+    <div class="col text-center ">
+      <h1 class="text-center fs-1">Kapcsolat</h1>
+    </div>
+    <div class=" col text-center">
+      <hr />
+    </div>
+  </div>
 </div>
 <div class="row justify-content-center fs-5 min-h-60">
   <div class="col-lg-4 align-middle">
-    <i class="fa fa-phone"></i><a href="tel:+36202337461" target="_blank">+36202337461</a><br/>
+    <i class="fa fa-phone"></i><a href="tel:+36202337461" target="_blank">+36202337461</a><br />
     <i class="fa fa-envelope"></i>
-    <a href="mailto:fenesklau@gmail.com" target="_blank">fenesklau&#64;gmail.com</a><br/>
-    <i class="fa fa-map-marker"></i>1149, Budapest Pillangó park<br/>
+    <a href="mailto:fenesklau@gmail.com" target="_blank">fenesklau&#64;gmail.com</a><br />
+    <i class="fa fa-map-marker"></i>1149, Budapest Pillangó park<br />
     <p class="fs-6 opacity-75">
       A helyszín a 14. kerületben a Pillangó parkban található, a pontos címről üzenetben kapsz tájékoztatást.
       Parkolás az utcán lehetséges, fizetős övezetben.
     </p>
   </div>
   <div class="col-lg-4 fit-content">
-    <iframe
-      allowfullscreen=""
-      height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    <iframe allowfullscreen="" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.3963615553093!2d19.117371976852887!3d47.50167167118046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd9530af4569%3A0x5232812217fe362a!2sPillang%C3%B3%20Park!5e0!3m2!1shu!2shu!4v1716289111858!5m2!1shu!2shu"
-      style="border:0;"
-      width="400"></iframe>
+      style="border:0;" width="400"></iframe>
   </div>
 
-  <div class="col-lg-8 fs-6 opacity-75">
-    <hr/>
+  <div class="col-lg-8 fs-6 opacity-75" *ngIf="!simplified">
+    <hr />
     <p>
       Ha e-mail-ben szeretnéd felvenni velem a kapcsolatot kérlek az alábbi információk mindenképpen szerepeljenek
       az üzenetedben:

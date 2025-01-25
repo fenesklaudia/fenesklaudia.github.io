@@ -3,7 +3,8 @@
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 :root {
-  --color1: #f9d6d0;
+  --color1base: 249, 214, 208;
+  --color1: rgb(var(--color1base));
   --color2: #faf0e6;
 }
 
@@ -105,4 +106,8 @@ p {
 
 .color1 {
   background-color: var(--color1);
+}
+
+.pointer {
+  cursor: pointer;
 }

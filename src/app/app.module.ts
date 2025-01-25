@@ -24,6 +24,7 @@ import { PriceDetailsComponent } from './basic-components/price-details/price-de
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { RibbonComponent } from './basic-components/ribbon/ribbon.component';
+import { ServicesSimpleComponent } from './pages/services-simple/services-simple.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { RibbonComponent } from './basic-components/ribbon/ribbon.component';
     PriceDetailsComponent,
     PageNotFoundComponent,
     AdminComponent,
-    RibbonComponent
+    RibbonComponent,
+    ServicesSimpleComponent
   ],
   imports: [
     BrowserModule,

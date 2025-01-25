@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contact-me',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './contact-me.component.css'
 })
 export class ContactMeComponent {
-
+  @Input() simplified = false;
 }
