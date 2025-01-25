@@ -48,10 +48,10 @@ export class ServiceListService {
           price: 3_500,
           schedule: '30 perc',
         },
-        'Minden további vendég sminkje': {
+        'Minden további vendég sminkje* ': {
           price: 16_000,
           schedule: '30-60 perc',
-          hint: 'Tincses vagy soros műszempilla ragasztása +2,000 Ft'
+          hint: 'Háromnál több vendég esetén egy smink ára 14,000 Ft'
         },
       },
       picName: 'bridal.jpg',

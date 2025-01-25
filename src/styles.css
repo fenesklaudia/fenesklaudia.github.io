@@ -95,10 +95,10 @@ p {
 }
 
 .logo::after {
-  box-shadow: inset 0px 0px 15px 5px var(--color1);
+  box-shadow: inset 0px 0px 15px 10px var(--color1);
   content: '';
   display: block;
-  height: 100%;
+  height: inherit;
   position: absolute;
   top: 0;
   width: inherit;
