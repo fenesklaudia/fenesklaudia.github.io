@@ -2,6 +2,11 @@
 
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
+:root {
+  --color1: #f9d6d0;
+  --color2: #faf0e6;
+}
+
 html,
 body {
   height: 100%;
@@ -86,4 +91,18 @@ p {
   text-align: justify;
   text-justify: inter-word;
   /* Ensures spacing between words is consistent */
+}
+
+.logo::after {
+  box-shadow: inset 0px 0px 15px 5px var(--color1);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: inherit;
+}
+
+.color1 {
+  background-color: var(--color1);
 }

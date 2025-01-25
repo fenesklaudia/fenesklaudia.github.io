@@ -7,7 +7,7 @@
 nav,
 nav div,
 nav ul {
-  background-color: #f4f4f4;
+  background-color: var(--color1);
   font-size: large;
 }
 
