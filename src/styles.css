@@ -3,7 +3,7 @@
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 :root {
-  --color1base: 249, 214, 208;
+  --color1base: 244, 244, 244;
   --color1: rgb(var(--color1base));
   --color2: #faf0e6;
 }
