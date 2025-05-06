@@ -12,11 +12,11 @@
 
 <div class="container mt-4 mb-5">
   <div class="row">
-    <div class="col-lg-3 col-md-6 col-6 mb-4" *ngFor="let item of services"
+    <div class="col-lg-3 col-md-6 col-6 mb-" *ngFor="let item of services"
          [routerLink]="['services/', item.link]">
+        <div class="menu-item border justify-content-center m-2 p-2"><h4
+          class="text-center title">{{item.title}}</h4></div>
       <div class="grid-item">
-        <div class="menu-item border m-3 justify-content-center align-middle"><h4
-          class="text-center title mt-2 mb-2">{{item.title}}</h4></div>
         <img src="../../assets/images/services/{{item.picName}}" alt="" class="img-fluid rounded">
       </div>
     </div>
