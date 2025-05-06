@@ -18,8 +18,8 @@ export class ServiceListService {
       shortSummary: 'Különleges alkalmakra, fotózásokra',
       details: {
         'Alkalmi smink': {
-          price: 16_000,
-          schedule: '90 perc',
+          price: 14_000,
+          schedule: '60 perc',
           hint: 'Tincses vagy soros műszempilla ragasztása +2,000 Ft'
         },
       },
@@ -46,12 +46,12 @@ export class ServiceListService {
         },
         'Vőlegény smink': {
           price: 3_500,
-          schedule: '30 perc',
+          schedule: '15 perc',
         },
         'Minden további vendég sminkje* ': {
-          price: 16_000,
+          price: 14_000,
           schedule: '30-60 perc',
-          hint: 'Háromnál több vendég esetén egy smink ára 14,000 Ft'
+          hint: 'Három vagy annál több vendég esetén egy smink ára 12,000 Ft'
         },
       },
       picName: 'bridal.jpg',
