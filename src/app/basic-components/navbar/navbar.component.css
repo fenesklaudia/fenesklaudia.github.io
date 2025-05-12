@@ -1,13 +1,12 @@
 .navbar,
 .navbar-brand {
   padding: 0;
-  color: blue;
 }
 
 nav,
 nav div,
 nav ul {
-  background-color: #f4f4f4;
+  background-color: white;
   font-size: large;
 }
 
@@ -24,4 +23,12 @@ nav a.navbar-brand {
 .dropdown-menu {
   border-color: #00000000;
   padding: .5rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  transition: top 0.3s;
 }
