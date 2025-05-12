@@ -9,18 +9,18 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { AdminComponent } from './pages/admin/admin.component';
 
 const routes: Routes = [
-  {path: '', component: MainPageComponent},
-  {path: 'galery', component: GaleryComponent},
-  {path: 'prices', component: PricesComponent},
-  {path: 'contact-me', component: ContactMeComponent},
-  {path: 'services', component: ServicesComponent},
-  {path: 'services/:subpage', component: ServicesComponent},
-  {path: 'admin', component: AdminComponent},
-  {path: '**', component: PageNotFoundComponent},
+  { path: '', component: MainPageComponent },
+  { path: 'galery', component: GaleryComponent },
+  { path: 'prices', component: PricesComponent },
+  { path: 'contact-me', component: ContactMeComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'services/:subpage', component: ServicesComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
