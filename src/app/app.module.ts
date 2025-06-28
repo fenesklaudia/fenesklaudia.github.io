@@ -26,6 +26,7 @@ import { RibbonComponent } from './basic-components/ribbon/ribbon.component';
 import { ServicesSimpleComponent } from './pages/services-simple/services-simple.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { ImageSliderWrapperComponent } from './basic-components/image-slider-wrapper/image-slider-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     PageNotFoundComponent,
     AdminComponent,
     RibbonComponent,
-    ServicesSimpleComponent
+    ServicesSimpleComponent,
+    ImageSliderWrapperComponent
   ],
   imports: [
     BrowserModule,
