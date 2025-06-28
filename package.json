@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "publish": "ng deploy --base-href=https://fenesklaudia.com --cname=fenesklaudia.com"
+    "publish": "ng deploy --base-href=https://fenesklaudia.com --cname=fenesklaudia.com",
+    "deploy": "ng deploy --base-href=https://fenesklaudia.com --cname=fenesklaudia.com"
   },
   "private": true,
   "dependencies": {
