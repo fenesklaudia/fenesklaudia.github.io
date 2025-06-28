@@ -12,21 +12,23 @@
 
 <div class="container mt-4 mb-5">
   <div class="row">
-    <div class="col-lg-3 col-md-6 col-6 mb-" *ngFor="let item of services"
-         [routerLink]="['services/', item.link]">
+    @for (item of services; track item) {
+      <div class="col-lg-3 col-md-6 col-6 mb-"
+        [routerLink]="['services/', item.link]">
         <div class="menu-item border justify-content-center m-2 p-2"><h4
-          class="text-center title">{{item.title}}</h4></div>
-      <div class="grid-item">
-        <img src="../../assets/images/services/{{item.picName}}" alt="" class="img-fluid rounded">
+        class="text-center title">{{item.title}}</h4></div>
+        <div class="grid-item">
+          <img src="../../assets/images/services/{{item.picName}}" alt="" class="img-fluid rounded">
+        </div>
       </div>
-    </div>
+    }
   </div>
 </div>
 
 <!-- Link to Bootstrap JS -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
 <!-- <div class="row justify-content-center">
-    <div *ngFor="let service of services" class="col-sm-3" style="height: max-content;">
-        <app-one-service [service]="service" [details]="false"></app-one-service>
-    </div>
+<div *ngFor="let service of services" class="col-sm-3" style="height: max-content;">
+  <app-one-service [service]="service" [details]="false"></app-one-service>
+</div>
 </div> -->

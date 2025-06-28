@@ -2,7 +2,9 @@
   <h1 class="col fs-1">Galéria</h1>
 </div>
 <div class="row justify-content-center">
-  <div *ngFor="let image of imageIndexes; index as i" class="col-sm-3 text-center btn-on-top p-2">
-    <img (click)="openImage(i)" class="img-fluid rounded" src="{{image.thumbnailUrl}}" />
-  </div>
+  @for (image of imageIndexes; track image; let i = $index) {
+    <div class="col-sm-3 text-center btn-on-top p-2">
+      <img (click)="openImage(i)" class="img-fluid rounded" src="{{image.thumbnailUrl}}" />
+    </div>
+  }
 </div>

@@ -1,4 +1,6 @@
-<app-ribbon imagePath="../../../assets/images/contact-me-ribbon.jpeg" *ngIf="!simplified"></app-ribbon>
+@if (!simplified) {
+  <app-ribbon imagePath="../../../assets/images/contact-me-ribbon.jpeg"></app-ribbon>
+}
 <div class="text-center mt-5 mb-5">
   <div class="row">
     <div class="col text-center">
@@ -26,20 +28,22 @@
   <div class="col-lg-4 fit-content">
     <iframe allowfullscreen="" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.3963615553093!2d19.117371976852887!3d47.50167167118046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd9530af4569%3A0x5232812217fe362a!2sPillang%C3%B3%20Park!5e0!3m2!1shu!2shu!4v1716289111858!5m2!1shu!2shu"
-      style="border:0;" width="400"></iframe>
+    style="border:0;" width="400"></iframe>
   </div>
 
-  <div class="col-lg-8 fs-6 opacity-75" *ngIf="!simplified">
-    <hr />
-    <p>
-      Ha e-mail-ben szeretnéd felvenni velem a kapcsolatot kérlek az alábbi információk mindenképpen szerepeljenek
-      az üzenetedben:
-    </p>
-    <p>
-      A neved és telefonszámod, a szolgáltatás megnevezése, amelyet igénybe szeretnél venni. Amennyiben alkalmi
-      vagy menyasszonyi sminket szeretnél kérni, úgy fontos megadnod az esemény dátumát, illetve helyszínét is.
-    </p>
-  </div>
+  @if (!simplified) {
+    <div class="col-lg-8 fs-6 opacity-75">
+      <hr />
+      <p>
+        Ha e-mail-ben szeretnéd felvenni velem a kapcsolatot kérlek az alábbi információk mindenképpen szerepeljenek
+        az üzenetedben:
+      </p>
+      <p>
+        A neved és telefonszámod, a szolgáltatás megnevezése, amelyet igénybe szeretnél venni. Amennyiben alkalmi
+        vagy menyasszonyi sminket szeretnél kérni, úgy fontos megadnod az esemény dátumát, illetve helyszínét is.
+      </p>
+    </div>
+  }
   <div class="col-12"></div>
 </div>
 <app-social-media></app-social-media>

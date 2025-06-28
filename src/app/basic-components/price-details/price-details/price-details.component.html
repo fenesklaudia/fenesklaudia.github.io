@@ -1,28 +1,44 @@
-<div *ngIf="service.shortSummary && show(filterType.shortSummary)">
-  {{service.shortSummary}}
-</div>
-<table *ngIf="!!service && servicesList.getDetailsLength(service)" class="table">
-  <thead>
-  <tr>
-    <th scope="col">Szolgáltatás</th>
-    <th *ngIf="show(filterType.schedule)" class="text-end" scope="col">Időtartam</th>
-    <th *ngIf="show(filterType.price)" class="text-end" scope="col">Ár</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let item of service.details | keyvalue">
-    <td>
-      {{item.key}}{{writeStarNumber(getHintCount(item.key))}}
-    </td>
-    <td *ngIf="show(filterType.schedule)" class="text-end align-middle text-nowrap">
-      {{item.value.schedule}}
-    </td>
-    <td *ngIf="show(filterType.price)" class="text-end align-middle text-nowrap">
-      {{item.value.price | number}} Ft
-    </td>
-  </tr>
-  </tbody>
-</table>
-<div *ngFor="let item of hints; let i = index">
-  <p class="mb-0" style="font-size: smaller; opacity: 50%;">{{writeStarNumber(i)}}{{item}}</p>
-</div>
+@if (service.shortSummary && show(filterType.shortSummary)) {
+  <div>
+    {{service.shortSummary}}
+  </div>
+}
+@if (!!service && servicesList.getDetailsLength(service)) {
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Szolgáltatás</th>
+        @if (show(filterType.schedule)) {
+          <th class="text-end" scope="col">Időtartam</th>
+        }
+        @if (show(filterType.price)) {
+          <th class="text-end" scope="col">Ár</th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of service.details | keyvalue; track item) {
+        <tr>
+          <td>
+            {{item.key}}{{writeStarNumber(getHintCount(item.key))}}
+          </td>
+          @if (show(filterType.schedule)) {
+            <td class="text-end align-middle text-nowrap">
+              {{item.value.schedule}}
+            </td>
+          }
+          @if (show(filterType.price)) {
+            <td class="text-end align-middle text-nowrap">
+              {{item.value.price | number}} Ft
+            </td>
+          }
+        </tr>
+      }
+    </tbody>
+  </table>
+}
+@for (item of hints; track item; let i = $index) {
+  <div>
+    <p class="mb-0" style="font-size: smaller; opacity: 50%;">{{writeStarNumber(i)}}{{item}}</p>
+  </div>
+}
