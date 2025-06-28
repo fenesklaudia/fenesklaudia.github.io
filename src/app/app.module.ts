@@ -27,6 +27,7 @@ import { ServicesSimpleComponent } from './pages/services-simple/services-simple
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { ImageSliderWrapperComponent } from './basic-components/image-slider-wrapper/image-slider-wrapper.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ImageSliderWrapperComponent } from './basic-components/image-slider-wra
     AdminComponent,
     RibbonComponent,
     ServicesSimpleComponent,
-    ImageSliderWrapperComponent
+    ImageSliderWrapperComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

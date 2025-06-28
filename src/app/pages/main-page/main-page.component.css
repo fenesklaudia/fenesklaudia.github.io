@@ -1,0 +1,12 @@
+.menu-item {
+    width: fit-content;
+}
+
+.menu-item:hover {
+    box-shadow: 0rem 0rem .6rem 0rem gray;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.row {
+    margin-bottom: 15vh !important;
+}

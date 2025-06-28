@@ -1,43 +1,27 @@
 <app-ribbon imagePath="../../../assets/images/main-page-ribbon.jpg" hidden></app-ribbon>
-<div class="mt-5">
-  <app-image-slider-wrapper [images]="images" #nav [width]="400" [height]="500" [space]="4" [infinite]="true"
+<div class="row pt-5">
+  <app-image-slider-wrapper [images]="images" #nav [width]="400" [height]="500" [space]="2" [infinite]="true"
     [autoSlide]="4" [lazyLoading]="true"></app-image-slider-wrapper>
 </div>
-<div class="mt-5">
-  <div class="row mb-5 pb-5 justify-content-center">
-    <div class="col-sm-4 text-center">
-      <img class="img-fluid rounded" src="../../../assets/images/me.jpg" alt="Fenes Klaudia" />
-    </div>
-    <div class="col-sm-6 fs-6">
-      <h3 class="fs-1 mt-3 mb-5">RÓLAM</h3>
-      <p>
-        Köszöntelek az oldalamon, Fenes Klaudia vagyok, sminkes és stylist.
-      </p>
-      <p>
-        A beauty szakmában stylistként kezdtem el dolgozni fotózásokon, divatbemutatókon és forgatásokon 2015-ben.
-      </p>
-      <p>
-        Az hogy stylistként együtt dolgozhattam sok sminkessel egyre jobban megerősített abban, hogy ezt az utat is meg
-        kell ismernem. Végül 2022-ben döntöttem el, hogy belevágok és Páll Adrienn iskolájában, a New School of Makeup
-        10 hónapos, államilag elismert képzésén vettem részt.
-      </p>
-      <p>
-        Munkám során kizárólag professzionális smink termékekkel dolgozom, mint MAC, Rare Beauty, Natasha Denona stb.
-      </p>
-      <p>
-        Célom, hogy a vendégeim elégedettséggel, magabiztosan távozzanak, illetve fontosnak tartom, hogy folyamatosan
-        képezzem magam, hiszen mindig lehet újat tanulni a szakma fortélyairól.
-      </p>
-    </div>
+<div class="row justify-content-center text-center fs-5">
+  <h1 class="pb-3">
+    Légy önmagad legszebb változata.
+    <br />
+    <br />
+    Ragyogj úgy, ahogy mindig is szerettél volna.
+  </h1>
+  <div [routerLink]=" ['about-me']" class="menu-item p-2 border text-nowrap pointer p-5 mt-5 pb-4 pt-4"
+    mat-raised-button>
+    RÓLAM
   </div>
+</div>
 
-  <div class="mb-5"><app-services-simple></app-services-simple></div>
+<div class="mb-5 row"><app-services-simple></app-services-simple></div>
 
-  <div class="pt-5 pb-5"><app-contact-me [simplified]=" true"></app-contact-me></div>
-  <hr />
-  <div class="row justify-content-center">
-    <div class="col-md-4 text-center" style="max-width: 50%;">
-      <img class="img-fluid w-100" src="../../../assets/images/logo.png" />
-    </div>
+<div class="row"><app-contact-me [simplified]=" true"></app-contact-me></div>
+<hr />
+<div class="row justify-content-center">
+  <div class="col-md-4 text-center" style="max-width: 50%;">
+    <img class="img-fluid w-100" src="../../../assets/images/logo.png" />
   </div>
 </div>

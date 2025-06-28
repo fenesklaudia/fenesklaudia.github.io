@@ -16,7 +16,7 @@ export class ImageSliderWrapperComponent {
   @Input() showArrow: boolean = true;
   @Input() infinite: boolean = true;
   @Input() imagePopup: boolean = true;
-  @Input() autoSlide: number = 0; // Set to >0 to auto slide every X seconds
+  @Input() autoSlide: number = 2; // Set to >0 to auto slide every X seconds
   @Input() showDots: boolean = false;
   @Input() showCaptions: boolean = false;
   @Input() imageSize: string = 'cover'; // for optional CSS binding

@@ -7,12 +7,14 @@ import { ContactMeComponent } from './pages/contact-me/contact-me.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
   { path: 'galery', component: GaleryComponent },
   { path: 'prices', component: PricesComponent },
   { path: 'contact-me', component: ContactMeComponent },
+  { path: 'about-me', component: AboutMeComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'services/:subpage', component: ServicesComponent },
   { path: 'admin', component: AdminComponent },
