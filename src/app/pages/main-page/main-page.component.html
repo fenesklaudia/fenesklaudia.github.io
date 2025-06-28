@@ -1,4 +1,6 @@
-<app-ribbon imagePath="../../../assets/images/main-page-ribbon.jpg"></app-ribbon>
+<app-ribbon imagePath="../../../assets/images/main-page-ribbon.jpg" hidden></app-ribbon>
+<ng-image-slider [images]="images" #nav [imageSize]="{width: 500, height: 500, space: 3}" [infinite]="true"
+  [autoSlide]="4" [lazyLoading]="true"></ng-image-slider>
 <div class="mt-5">
   <div class="row mb-5 pb-5 justify-content-center">
     <div class="col-sm-4 text-center">

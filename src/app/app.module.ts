@@ -25,6 +25,7 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { RibbonComponent } from './basic-components/ribbon/ribbon.component';
 import { ServicesSimpleComponent } from './pages/services-simple/services-simple.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    NgbModule
+    NgbModule,
+    NgImageSliderModule
   ],
   providers: [
     provideAnimationsAsync()
