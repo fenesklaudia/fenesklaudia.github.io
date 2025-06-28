@@ -24,6 +24,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { AdminComponent } from './pages/admin/admin.component';
 import { RibbonComponent } from './basic-components/ribbon/ribbon.component';
 import { ServicesSimpleComponent } from './pages/services-simple/services-simple.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ServicesSimpleComponent } from './pages/services-simple/services-simple
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatTooltipModule
+    MatTooltipModule,
+    NgbModule
   ],
   providers: [
     provideAnimationsAsync()
