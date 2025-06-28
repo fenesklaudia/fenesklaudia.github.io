@@ -4,9 +4,10 @@ import { OneServiceViewModel } from '../../vew-models/one-service-view-model';
 import { PriceCols } from '../../basic-components/price-details/price-details/price-details.component';
 
 @Component({
-  selector: 'app-prices-component',
-  templateUrl: './prices-component.component.html',
-  styleUrl: './prices-component.component.css'
+    selector: 'app-prices-component',
+    templateUrl: './prices-component.component.html',
+    styleUrl: './prices-component.component.css',
+    standalone: false
 })
 export class PricesComponent {
 

@@ -3,9 +3,10 @@ import ImageViewer from 'awesome-image-viewer';
 import { ImageListService } from '../../services/image-list.service';
 
 @Component({
-  selector: 'app-galery-component',
-  templateUrl: './galery-component.component.html',
-  styleUrl: './galery-component.component.css'
+    selector: 'app-galery-component',
+    templateUrl: './galery-component.component.html',
+    styleUrl: './galery-component.component.css',
+    standalone: false
 })
 export class GaleryComponent {
 

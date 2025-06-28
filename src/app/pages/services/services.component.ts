@@ -4,9 +4,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ServiceListService } from '../../services/service-list.service';
 
 @Component({
-  selector: 'app-services',
-  templateUrl: './services.component.html',
-  styleUrl: './services.component.css',
+    selector: 'app-services',
+    templateUrl: './services.component.html',
+    styleUrl: './services.component.css',
+    standalone: false
 })
 export class ServicesComponent implements OnInit {
   subpage: string = '';

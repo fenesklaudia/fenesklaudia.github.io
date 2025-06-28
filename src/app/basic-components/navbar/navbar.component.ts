@@ -3,9 +3,10 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 declare const window: any;
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+    selector: 'app-navbar',
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.css',
+    standalone: false
 })
 export class NavbarComponent {
   @ViewChild('navbar') navbar: ElementRef;

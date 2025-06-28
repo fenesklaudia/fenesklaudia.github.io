@@ -3,9 +3,10 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ImageService } from './services/image.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    standalone: false
 })
 export class AppComponent {
   title = 'fenesklaudia';

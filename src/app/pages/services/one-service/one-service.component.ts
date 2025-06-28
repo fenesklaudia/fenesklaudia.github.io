@@ -4,9 +4,10 @@ import { ServiceListService } from '../../../services/service-list.service';
 import { PriceCols } from '../../../basic-components/price-details/price-details/price-details.component';
 
 @Component({
-  selector: 'app-one-service',
-  templateUrl: './one-service.component.html',
-  styleUrl: './one-service.component.css'
+    selector: 'app-one-service',
+    templateUrl: './one-service.component.html',
+    styleUrl: './one-service.component.css',
+    standalone: false
 })
 export class OneServiceComponent {
   @Input() service: OneServiceViewModel;

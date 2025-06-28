@@ -4,9 +4,10 @@ import { ServiceListService } from '../../services/service-list.service';
 import { OneServiceViewModel } from '../../vew-models/one-service-view-model';
 
 @Component({
-  selector: 'app-services-simple',
-  templateUrl: './services-simple.component.html',
-  styleUrl: './services-simple.component.css'
+    selector: 'app-services-simple',
+    templateUrl: './services-simple.component.html',
+    styleUrl: './services-simple.component.css',
+    standalone: false
 })
 export class ServicesSimpleComponent {
 

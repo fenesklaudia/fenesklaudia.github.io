@@ -3,9 +3,10 @@ import { OneServiceViewModel } from '../../../vew-models/one-service-view-model'
 import { ServiceListService } from '../../../services/service-list.service';
 
 @Component({
-  selector: 'app-price-details',
-  templateUrl: './price-details.component.html',
-  styleUrl: './price-details.component.css'
+    selector: 'app-price-details',
+    templateUrl: './price-details.component.html',
+    styleUrl: './price-details.component.css',
+    standalone: false
 })
 export class PriceDetailsComponent implements OnChanges {
   @Input() service: OneServiceViewModel;
