@@ -11,7 +11,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { GaleryComponent } from './pages/galery-component/galery-component.component';
 import { PricesComponent } from './pages/prices-component/prices-component.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NavbarComponent } from './basic-components/navbar/navbar.component';
 import { FooterComponent } from './basic-components/footer/footer.component';
@@ -52,8 +51,7 @@ import { ServicesSimpleComponent } from './pages/services-simple/services-simple
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatTooltipModule,
-    NgbModule
+    MatTooltipModule
   ],
   providers: [
     provideAnimationsAsync()
