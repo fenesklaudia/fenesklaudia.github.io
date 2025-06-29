@@ -1,21 +1,11 @@
-.btn-on-top {
-  width: 20rem;
-  height: 30rem;
-  object-fit: cover;
-}
-
-@media only screen and (max-width: 800px) {
-  .btn-on-top {
-    width: 20rem;
-    height: 15rem;
-    object-fit: cover;
-  }
-}
-
 p {
   margin: 0 !important;
 }
 
-.col {
-  margin-top: 1rem;
+.col-lg {
+  margin-top: 2rem !important;
+}
+
+.fb-page .fb-like-page {
+  width: 100% !important;
 }
