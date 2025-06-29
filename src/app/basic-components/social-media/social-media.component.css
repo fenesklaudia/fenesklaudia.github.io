@@ -1,11 +1,11 @@
-img {
+.btn-on-top {
   width: 20rem;
   height: 30rem;
   object-fit: cover;
 }
 
 @media only screen and (max-width: 800px) {
-  img {
+  .btn-on-top {
     width: 20rem;
     height: 15rem;
     object-fit: cover;
@@ -14,5 +14,8 @@ img {
 
 p {
   margin: 0 !important;
-  font-size: x-small;
+}
+
+.col {
+  margin-top: 1rem;
 }
