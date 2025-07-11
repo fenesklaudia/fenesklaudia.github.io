@@ -9,19 +9,19 @@ import { ImageService } from './services/image.service';
     standalone: false
 })
 export class AppComponent {
-  title = 'fenesklaudia';
-  loaded = true;
+    title = 'fenesklaudia';
+    loaded = true;
 
-  constructor(
-    private modalService: NgbModal,
-    private imageService: ImageService
-  ) {
-    this.imageService.imagesLoading$.subscribe({
-      next: (n) => this.loaded = n == 0
-    });
-  }
+    constructor(
+        private modalService: NgbModal,
+        private imageService: ImageService
+    ) {
+        this.imageService.imagesLoading$.subscribe({
+            next: (n) => this.loaded = n == 0
+        });
+    }
 
-  public open(modal: any): void {
-    this.modalService.open(modal);
-  }
+    public open(modal: any): void {
+        this.modalService.open(modal);
+    }
 }
