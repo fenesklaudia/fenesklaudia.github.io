@@ -1,0 +1,13 @@
+.multi {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 800px) {
+    .multi {
+        width: 20rem;
+        height: 20rem;
+        object-fit: cover;
+    }
+}

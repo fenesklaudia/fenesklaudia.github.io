@@ -1,30 +1,39 @@
-<div class="row mt-5 pt-5 justify-content-center">
-    <div class="col-sm-4 text-center">
-        <img class="img-fluid rounded" src="../../../assets/images/me.jpg" alt="Fenes Klaudia" />
+<div class="row pt-5 justify-content-center">
+    <div class="col-sm-4 text-center mt-5">
+        <img class="img-fluid rounded" src="../../../assets/images/about-me/me.jpg" alt="Fenes Klaudia"/>
     </div>
-    <div class="col-sm-6 fs-6">
-        <h3 class="fs-1 mt-3 mb-5">RÓLAM</h3>
+    <div class="col-sm-6 fs-6 mt-5">
+        <h3 class="fs-4 mb-4">
+            Örülök, hogy itt vagy – én Fenes Klaudia vagyok, menyasszonyi és alkalmi sminkes.
+        </h3>
         <p>
-            Köszöntelek az oldalamon, Fenes Klaudia vagyok, sminkes és stylist.
+            Mindig olyan hivatást kerestem, ahol közel kerülhetek az emberekhez, miközben a kreativitásomat is
+            megélhetem. Nem volt meglepő, hogy már gyerekként a szépségszakmák világa vonzott.
         </p>
         <p>
-            A beauty szakmában stylistként kezdtem el dolgozni fotózásokon, divatbemutatókon és forgatásokon 2015-ben.
+            Pályámat stylistként kezdtem 2015-ben, fotózásokon, divatbemutatókon és forgatásokon dolgoztam. Az évek
+            során számos tehetséges sminkessel találkoztam, és egyre erősebben éreztem, hogy ez a terület is
+            közel áll hozzám.
         </p>
         <p>
-            Az hogy stylistként együtt dolgozhattam sok sminkessel egyre jobban megerősített abban, hogy ezt az utat is
-            meg
-            kell ismernem. Végül 2022-ben döntöttem el, hogy belevágok és Páll Adrienn iskolájában, a New School of
-            Makeup
-            10 hónapos, államilag elismert képzésén vettem részt.
+            2022-ben úgy döntöttem, hogy követem ezt az érzést, és beiratkoztam a New School of Makeup – Páll Adrienn
+            sminkiskolájának – 10 hónapos, államilag elismert képzésére. Ez a döntés meghatározó mérföldkő volt
+            számomra, és azóta is szenvedéllyel dolgozom sminkesként.
         </p>
         <p>
-            Munkám során kizárólag professzionális smink termékekkel dolgozom, mint MAC, Rare Beauty, Natasha Denona
-            stb.
+            Munkám során kizárólag professzionális termékeket használok, többek között MAC, Rare Beauty, Nars, Makup by
+            Mario – mert fontos számomra a minőség és a tartósság.
         </p>
         <p>
-            Célom, hogy a vendégeim elégedettséggel, magabiztosan távozzanak, illetve fontosnak tartom, hogy
-            folyamatosan
-            képezzem magam, hiszen mindig lehet újat tanulni a szakma fortélyairól.
+            Hiszek abban, hogy a smink nemcsak a külsőt szépíti meg, hanem magabiztosságot és egyfajta belső ragyogást
+            is ad. Folyamatosan képzem magam, mert ebben a szakmában mindig van hova fejlődni – és ez benne a legszebb.
         </p>
     </div>
+</div>
+<div class="row justify-content-center mt-5 pt-5 mb-5 pt-5">
+    @for (image of imageIndexes; track image; let i = $index) {
+        <div class="col-sm-3 col-6 text-center btn-on-top p-2">
+            <img (click)="openImage(i)" class="img-fluid rounded multi" src="{{image.thumbnailUrl}}"/>
+        </div>
+    }
 </div>
