@@ -9,7 +9,7 @@
 .grid-item {
   position: relative;
   overflow: hidden;
-  height: 45vh;
+  height: 35vh;
   /* Creates a square aspect ratio */
 }
 
