@@ -7,7 +7,7 @@ nav,
 nav div,
 nav ul {
   background-color: white;
-  font-size: large;
+  font-size: 1.2rem;
 }
 
 nav a.navbar-brand {

@@ -1,42 +1,48 @@
-<div class="text-center mt-5">
-  <h1 class="col fs-1">Árlista</h1>
+<div class="row text-center mt-5">
+    <div class="col text-center">
+        <hr/>
+    </div>
+    <h1 class="col fs-1">Árlista</h1>
+    <div class="col text-center">
+        <hr/>
+    </div>
 </div>
 @for (item of services; track item) {
-  <div>
-    <div class="fs-3 mt-5 mb-2">
-      {{item.title}}
+    <div>
+        <div class="fs-3 mt-5 mb-2">
+            {{item.title}}
+        </div>
+        @if (this.servicesList.getDetailsLength(item)) {
+            <div>
+                <app-price-details [cols]="shownCols" [service]="item"></app-price-details>
+            </div>
+        }
+        @if (!this.servicesList.getDetailsLength(item)) {
+            <div class="fs-6">
+                Keress kérlek e-mail-en a megvalósítandó projekt leírásával, így tudok egyedi árajánlatot készíteni.
+            </div>
+        }
     </div>
-    @if (this.servicesList.getDetailsLength(item)) {
-      <div>
-        <app-price-details [cols]="shownCols" [service]="item"></app-price-details>
-      </div>
-    }
-    @if (!this.servicesList.getDetailsLength(item)) {
-      <div>
-        Keress kérlek e-mail-en a megvalósítandó projekt leírásával, így tudok egyedi árajánlatot készíteni.
-      </div>
-    }
-  </div>
 }
 <div>
-  <div class="fs-3 mt-5 mb-2">
-    <p>Kiszállási díj</p>
-  </div>
-  <div>
-    <p>Budapesten belül az V., VI., VII., VIII., X., XIII., XIV., XV., XVI. kerületekben a kiszállás ingyenes,
-      Budapest további kerületeibe és vidékre a kiszállási díj egységesen min. 3000 Ft, vagy 100 Ft/km a <a
-      href="/contact-me">Pillangó
-    parktól</a>, oda vissza útra értendő, plusz parkolási díj.
-  </p>
-  <p>Budapesten kívüli kiszállást min. 3 smink elkészítése esetén tudom vállalni.</p>
-  <p>Paks és környéki munkák költségét egyedi árajánlat keretében tudjuk pontosítani.</p>
-</div>
-<div class="fs-3 mt-5 mb-2">
-  <p>Lemondási feltételek</p>
-</div>
-<div>
-  <p>Ha 48 órán belül mondod le az időpontodat a szolgáltatás felét, 24 órán belül pedig a teljes összeget ki kell
-    fizetned.
-  </p>
-</div>
+    <div class="fs-2 mt-5 mb-2">
+        <p>Kiszállási díj</p>
+    </div>
+    <div class="fs-6">
+        <p>Budapesten belül az V., VI., VII., VIII., X., XIII., XIV., XV., XVI. kerületekben a kiszállás ingyenes,
+            Budapest további kerületeibe és vidékre a kiszállási díj egységesen min. 3000 Ft, vagy 100 Ft/km a <a
+                href="/contact-me">Pillangó
+                parktól</a>, oda vissza útra értendő, plusz parkolási díj.
+        </p>
+        <p>Budapesten kívüli kiszállást min. 3 smink elkészítése esetén tudom vállalni.</p>
+        <p>Paks és környéki munkák költségét egyedi árajánlat keretében tudjuk pontosítani.</p>
+    </div>
+    <div class="fs-2 mt-5 mb-2">
+        <p>Lemondási feltételek</p>
+    </div>
+    <div class="fs-6">
+        <p>Ha 48 órán belül mondod le az időpontodat a szolgáltatás felét, 24 órán belül pedig a teljes összeget ki kell
+            fizetned.
+        </p>
+    </div>
 </div>

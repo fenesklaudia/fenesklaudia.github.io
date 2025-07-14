@@ -9,3 +9,7 @@ p {
 .fb-page .fb-like-page {
   width: 100% !important;
 }
+
+button :not(i){
+    font-family: "Roboto", sans-serif !important;
+}

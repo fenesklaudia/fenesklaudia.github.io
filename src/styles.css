@@ -3,111 +3,115 @@
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 :root {
-  --color1base: white;
-  --color1: rgb(var(--color1base));
-  --color2: #faf0e6;
+    --color1base: white;
+    --color1: rgb(var(--color1base));
+    --color2: #faf0e6;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
-* :not(i) {
-  font-family: Arial, Helvetica, sans-serif !important;
+* :not(i){
+    font-family: "Cormorant Garamond", sans-serif !important;
+    font-optical-sizing: auto;
+}
+
+p :not(i){
+    font-size: 1.2rem !important;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif !important;
-  background-color: #cccccc;
-  color: #000000ab !important;
+    margin: 0;
+    background-color: #cccccc;
+    color: #000000ab !important;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .btn-on-top button {
-  position: absolute;
+    position: absolute;
 }
 
 .fa-facebook-f {
-  color: #0866ff;
+    color: #0866ff;
 }
 
 .fa-instagram {
-  color: #e6683c;
+    color: #e6683c;
 }
 
 .fa-tiktok {
-  color: black;
+    color: black;
 }
 
 .min-h-80 {
-  margin-bottom: 10vh;
+    margin-bottom: 10vh;
 }
 
 .min-h-60 {
-  min-height: 60vh;
+    min-height: 60vh;
 }
 
 .fit-content {
-  width: fit-content !important;
+    width: fit-content !important;
 }
 
 .imageViewer .container {
-  position: static !important;
+    position: static !important;
 }
 
 .mv-50vw {
-  max-width: 50vw !important;
+    max-width: 50vw !important;
 }
 
 .mh-50vh {
-  max-height: 50vh;
-  width: 100%;
+    max-height: 50vh;
+    width: 100%;
 }
 
 .img-fluid {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 img.img-fluid {
-  height: 100%;
-  max-height: 60vh;
+    height: 100%;
+    max-height: 60vh;
 }
 
 @media only screen and (max-width: 1199px) {
-  .img-fluid {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    max-height: 50vh;
-    width: 100%;
-  }
+    .img-fluid {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-height: 50vh;
+        width: 100%;
+    }
 }
 
 p {
-  text-align: justify;
-  text-justify: inter-word;
-  /* Ensures spacing between words is consistent */
+    text-align: justify;
+    text-justify: inter-word;
+    /* Ensures spacing between words is consistent */
 }
 
 .logo::after {
-  box-shadow: inset 0px 0px 15px 10px var(--color1);
-  content: '';
-  display: block;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  width: inherit;
+    box-shadow: inset 0px 0px 15px 10px var(--color1);
+    content: '';
+    display: block;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    width: inherit;
 }
 
 .color1 {
-  background-color: var(--color1);
+    background-color: var(--color1);
 }
 
 .pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
