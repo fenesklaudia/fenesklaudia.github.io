@@ -115,3 +115,7 @@ p {
 .pointer {
     cursor: pointer;
 }
+
+.w-fc{
+    width: fit-content !important;
+}

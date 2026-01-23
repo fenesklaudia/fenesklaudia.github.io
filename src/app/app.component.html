@@ -5,8 +5,14 @@
   <div class="pt-5 mt-3">
     <app-navbar></app-navbar>
     <div [ngClass]="{'invisible' : !loaded}" class="container">
-      <br />
+      <br/>
       <router-outlet></router-outlet>
+      <div class="row high justify-content-center text-center fs-5" *ngIf="showContactMeButton()">
+        <div [routerLink]=" ['contact-me']" class="menu-item p-2 border text-nowrap pointer p-5 mt-5 pb-4 pt-4 w-fc"
+             mat-raised-button>
+          Időpont egyeztetés
+        </div>
+      </div>
     </div>
   </div>
   <div class="mt-auto container">

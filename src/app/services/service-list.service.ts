@@ -18,7 +18,7 @@ export class ServiceListService {
       shortSummary: 'Különleges alkalmakra, fotózásokra',
       details: {
         'Alkalmi smink': {
-          price: 14_000,
+          price: 15_000,
           schedule: '60 perc',
           hint: 'Tincses vagy soros műszempilla ragasztása +2,000 Ft'
         },
@@ -35,44 +35,44 @@ export class ServiceListService {
       ],
       details: {
         'Menyasszonyi próbasmink': {
-          price: 20_000,
+          price: 22_000,
           schedule: '90-120 perc',
           hint: 'Tincses vagy soros műszempilla ragasztása +2,000 Ft'
         },
         'Menyasszonyi smink a nagy napon': {
-          price: 20_000,
+          price: 22_000,
           schedule: '90 perc',
           hint: 'Tincses vagy soros műszempilla ragasztása +2,000 Ft'
         },
         'Vőlegény smink': {
-          price: 3_500,
+          price: 4_000,
           schedule: '15 perc',
         },
         'Minden további vendég sminkje* ': {
-          price: 14_000,
+          price: 15_000,
           schedule: '30-60 perc',
-          hint: 'Három vagy annál több vendég esetén egy smink ára 12,000 Ft'
+          hint: 'Három vagy annál több vendég esetén egy smink ára 13,000 Ft'
         },
       },
       picName: 'bridal.jpg',
       link: "bridal",
     }, {
-      title: 'Sminktanácsadás',
+      title: 'Sminkoktatás',
       summaries: [
         'Nem tudod milyen smink, melyik színek állnak jól neked, vagy csak megtanulnád kisminkelni magad a mindennapokra? Egy személyre szóló tanácsadáson segíthetek ebben.',
-        'A sminktanácsadás lehetőséget ad arra, hogy megismerd az alapvető sminkelési technikákat, és személyre szabott tippeket kapj a legjobb sminktermékek kiválasztásához.',
+        'A sminkoktatás lehetőséget ad arra, hogy megismerd az alapvető sminkelési technikákat, és személyre szabott tippeket kapj a legjobb sminktermékek kiválasztásához.',
         'Választhatsz egy nappali smink és egy nappali/alkalmi smink elsajátítása között.',
-        'A nappali sminktanácsadás során átnézzük a neszesszered, tanácsokat kapsz az arcod alakjához és bőrtípusodhoz illő sminktechnikákról. Megismerheted a megfelelő alapozó, korrektor és púder kiválasztásának fontosságát, valamint megtanulhatod, hogyan emeld ki a szemeidet a megfelelő szemsminkkel a szemöldökformázással bezárólag. Megmutatom a pirosító, bronzosító, highlighter használatát, végül megtanítalak a szájceruza, rúzs használatára, külön hangsúllyal arra, hogy mely rúzsszínek állnak jól neked.',
+        'A nappali sminkoktatás során átnézzük a neszesszered, tanácsokat kapsz az arcod alakjához és bőrtípusodhoz illő sminktechnikákról. Megismerheted a megfelelő alapozó, korrektor és púder kiválasztásának fontosságát, valamint megtanulhatod, hogyan emeld ki a szemeidet a megfelelő szemsminkkel a szemöldökformázással bezárólag. Megmutatom a pirosító, bronzosító, highlighter használatát, végül megtanítalak a szájceruza, rúzs használatára, külön hangsúllyal arra, hogy mely rúzsszínek állnak jól neked.',
         'Alkalmi smink tanácsadás tartalmazza mindazt, amit a nappali, de itt megtanulhatod hogy készíts nappali sminkből alkalmit, megtanítalak kontúrozni, és egy hangsúlyosabb szemsminket elkészíteni akár a te elképzeléseid szerint.',
       ],
       details: {
-        'Nappali sminktanácsadás': {
-          price: 20_000,
-          schedule: '2 óra'
+        'Nappali sminkoktatás': {
+          price: 25_000,
+          schedule: '2-3 óra'
         },
-        'Nappali/alkalmi sminktanácsadás': {
-          price: 30_000,
-          schedule: '3 óra'
+        'Nappali/alkalmi sminkoktatás': {
+          price: 35_000,
+          schedule: '3-4 óra'
         },
       },
       picName: "advice.jpg",
