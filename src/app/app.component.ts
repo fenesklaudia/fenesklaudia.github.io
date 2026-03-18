@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ImageService } from './services/image.service';
 import { Router } from '@angular/router';
+import { SeoService } from './services/seo.service';
 
 @Component({
     selector: 'app-root',
@@ -16,7 +17,8 @@ export class AppComponent {
     constructor(
         private modalService: NgbModal,
         private imageService: ImageService,
-        private router: Router
+        private router: Router,
+        private seoService: SeoService
     ) {
         this.imageService.imagesLoading$.subscribe({
             next: (n) => this.loaded = n == 0
