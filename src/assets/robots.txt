@@ -2,5 +2,14 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-Sitemap: https://fenesklaudia.com/sitemap.xml
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
 
+User-agent: *
+Allow: /assets/
+Allow: /sitemap.xml
+Allow: /robots.txt
+Crawl-delay: 1
+
+Sitemap: https://fenesklaudia.com/sitemap.xml
