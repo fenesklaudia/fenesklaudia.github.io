@@ -9,7 +9,19 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://fenesklaudia.com/services</loc>
+        <loc>https://fenesklaudia.com/services/bridal</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://fenesklaudia.com/services/casual</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://fenesklaudia.com/services/advice</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://fenesklaudia.com/services/other-events</loc>
         <priority>0.8</priority>
     </url>
     <url>
